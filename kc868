@@ -1,0 +1,87 @@
+# Como usar o firmware “KCS” v2 para a placa KinCony ESP32
+
+## Introdução
+Este documento é destinado aos controladores inteligentes KinCony: KC868-AM, ASR, A2, A4, A4S, A6, A8, A8M, A8S, A16, A16S, E16S, A32, A32M, A64, A128, AG, AK, AI, AIO, AP.
+
+Se preferir, você pode baixar o guia do usuário em formato PDF:
+[Download do guia do usuário em PDF](https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf)
+
+## 1. Baixando o firmware “KCS” para a série KinCony KC868-A
+1. Baixe a ferramenta “ESP32 download tool” e o arquivo BIN do firmware:
+   - Ferramenta de download: [flash_download_tool_3.9.2.zip](https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip)
+   - Arquivo BIN: [Fórum KinCony](https://www.kincony.com/forum/forumdisplay.php?fid=40)
+2. Abra o “flash_download_tool_3.9.2.exe” e selecione as opções apropriadas:
+   - Para ESP32-WROOM-32E/32UE: escolha “ESP32” e “develop”.
+   - Para ESP32-S3-WROOM-1U: escolha “ESP32-S3”, configure `workMode` como “develop” e `loadMode` como “usb”.
+
+![ESP32 Download Tool](how%20to%20use_arquivos/image001.png)
+
+3. Escolha o arquivo BIN do firmware e a porta COM, e inicie o download.
+
+![Passos de download](how%20to%20use_arquivos/image003.png)
+
+## 2. Configuração de Ethernet ou WiFi
+1. Conecte a placa ao roteador via cabo Ethernet. Certifique-se de que o computador também esteja conectado ao mesmo roteador.
+2. Use a ferramenta de varredura KinCony para localizar o endereço IP da placa.
+   - Ferramenta: [KinCony-SCAN_Device.zip](https://www.kincony.com/download/UDP_SCAN_LIST.zip)
+
+![Scan Device](how%20to%20use_arquivos/image137.jpg)
+
+### Passos para encontrar o endereço IP
+1. Escolha o adaptador de rede do computador.
+2. Escolha o endereço IP do computador.
+3. Clique em “StartMonitorPort”.
+4. Clique em “SCAN”.
+5. Verifique o endereço IP da placa.
+
+![Configuração WiFi AP](how%20to%20use_arquivos/image006.png)
+
+Se a placa estiver configurada como “AP” (ponto de acesso), conecte-se ao sinal WiFi gerado por ela e acesse [http://192.168.4.1](http://192.168.4.1).
+
+### Login na página da web
+- Nome de usuário: `admin`
+- Senha: `admin`
+
+![Página inicial](how%20to%20use_arquivos/image138.jpg)
+
+## Configuração de entrada e saída
+- **Página INPUT**: Configure como cada porta de entrada digital interage com as saídas.
+- **Página OUTPUT**: Configure modos como “hold on”, “delay”, e “jogging”.
+
+![Página OUTPUT](how%20to%20use_arquivos/image014.png)
+
+## RF e IR
+- **RF**: Suporta aprendizado, transmissão e exclusão de códigos remotos EV1527/PT2262.
+- **IR**: Suporta aprendizado e controle de dispositivos como TV, DVD e condicionadores de ar.
+
+## Sensores
+- Configure sensores de temperatura e umidade com thresholds específicos para atualizações automáticas.
+
+![Página do sensor](how%20to%20use_arquivos/image154.jpg)
+
+## Automação IFTTT
+Crie automações com condições e ações específicas.
+
+![Automação IFTTT](how%20to%20use_arquivos/image164.jpg)
+
+## Configuração de rede
+Configure modos Ethernet, WiFi AP e STA.
+
+![Configuração de rede](how%20to%20use_arquivos/image103.png)
+
+## Protocolo e personalização
+- Habilite/desabilite protocolos como TCP, UDP, HTTP, RS485.
+- Configure comandos personalizados para interações com outros dispositivos.
+
+![Protocolo RS485](how%20to%20use_arquivos/image191.jpg)
+
+## Página do sistema
+- Configure reinício, restauração de fábrica e feedback automático de valores ADC.
+
+![Página do sistema](how%20to%20use_arquivos/image200.jpg)
+
+---
+
+Autor: **admin**  
+Data: **20/07/2023**  
+[Guia do Usuário](https://www.kincony.com/user-guide)
