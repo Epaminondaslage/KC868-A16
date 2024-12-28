@@ -630,3 +630,5 @@ title="View all posts by admin"><span lang=EN-US>By admin</span></a><a
 href="https://www.kincony.com/2023/07/20" title="am8:15"><span lang=EN-US>07/20/2023</span></a></p>
 
 <p class=MsoNormal><b><span lang=EN-US>Author:&nbsp;admin</span></b></p>
+
+https://www.kincony.com/esp32-board-16-channel-relay-hardware.html
