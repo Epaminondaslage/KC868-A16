@@ -4,6 +4,10 @@
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
 A128 AG AK AI AIO AP***
 
+### Baixei os firmware e a ferramenta de flash o ESP32 : 
+
+https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link
+
 ## hardware resource:
 
 * Ethernet/WiFi/Bluetooth/RS485
