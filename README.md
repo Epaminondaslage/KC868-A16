@@ -1,7 +1,5 @@
-KC868-A16
+# Guia de Uso do Firmware "KCS" v2 para o KC868-A16
 
-Here is "KCS" firmware for KinCony KC868-A series (ESP32) board.
-How to download and use, online guide: 
 
 https://www.kincony.com/esp32-kcsv2-firmware.html
 
@@ -19,13 +17,10 @@ ESP32 board</span></b></p>
  <li class=MsoNormal><span lang=EN-US>how to use “KCS”v2 firmware…</span></li>
 </ol>
 
-<p class=MsoNormal><span lang=EN-US>Note: This document use for KinCony smart
-controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
-A128 AG AK AI AIO AP</span></p>
+***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
+A128 AG AK AI AIO AP***
 
-<p class=MsoNormal><span lang=EN-US>if you want to read by PDF file, </span><a
-href="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf"><span
-lang=EN-US>download user guide PDF file</span></a><span lang=EN-US>.</span></p>
+if you want to read by PDF file, <ahref="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf"><download user guide PDF file/a>.</p>
 
 <p class=MsoNormal><b><span lang=EN-US>1. Download “KCS” firmware to KinCony
 KC868-A series board.</span></b></p>
