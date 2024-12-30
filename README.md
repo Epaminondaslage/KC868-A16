@@ -42,10 +42,8 @@ if you want to read by PDF file, <ahref="https://www.kincony.com/images/user-gui
 4. **Selecionar Arquivo e Porta COM:**
    - Escolha o arquivo BIN do firmware KCS v2.
    - Selecione a porta COM correspondente e inicie o download em 5 etapas.
- <img border=0 width=508 height=697 id="Imagem 142"
-src="how%20to%20use_arquivos/image003.png" alt="esp32 download tool"><span
-lang=EN-US><br>
-<b>2. Use ethernet cable or WiFi config setting.</b></span></p>
+ <img border=0 width=508 height=697 id="Imagem 142" src="how%20to%20use_arquivos/image003.png" alt="esp32 download tool"><span lang=EN-US><br>
+<b>2. Use o cabo ethernet or WiFi config setting.</b></span></p>
 
  <span lang=EN-US>a. use ethernet cable connect board to your
 router, make sure your computer also connect with same router, just all in one
