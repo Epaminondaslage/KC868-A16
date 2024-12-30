@@ -9,12 +9,11 @@ https://www.kincony.com/esp32-kcsv2-firmware.html
 
 https://www.kincony.com/
 
-(https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pd)["User Guide" how to use “KCS”v2 firmware]
-
+https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf
 
 if you want to read by PDF file, <ahref="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf"><download user guide PDF file/a>.</p>
 
- <b><span lang=EN-US>1. Download “KCS” firmware to KinCony KC868-A series board.</span></b></p>
+1. Download “KCS” firmware to KinCony KC868-A series board.
 
 ### Download e Configuração do Firmware KCS v2
 
