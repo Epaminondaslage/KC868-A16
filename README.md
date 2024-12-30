@@ -8,8 +8,6 @@ https://www.kincony.com/esp32-kcsv2-firmware.html
  <b><span lang=EN-US>how to use “KCS”v2 firmware for KinCony
 ESP32 board</span></b></p>
 
- You are here:</p>
-
  <a href="https://www.kincony.com/" title=Home>Home</a>
  <a href="https://www.kincony.com/user-guide" title="User Guide">User Guid - how to use “KCS”v2 firmware…
 </ol>
@@ -19,32 +17,31 @@ A128 AG AK AI AIO AP***
 
 if you want to read by PDF file, <ahref="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf"><download user guide PDF file/a>.</p>
 
- <b><span lang=EN-US>1. Download “KCS” firmware to KinCony
-KC868-A series board.</span></b></p>
+ <b><span lang=EN-US>1. Download “KCS” firmware to KinCony KC868-A series board.</span></b></p>
 
- <span lang=EN-US>a. Download “ESP32 download tool” from </span><a
-href="https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip"><span
-lang=EN-US>https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip</span></a><span
-lang=EN-US> and firmware BIN file from </span><a
-href="https://www.kincony.com/forum/forumdisplay.php?fid=40"><span lang=EN-US>KinCony
-forum</span></a><span lang=EN-US>.<br>
-b. Open “flash_download_tool_3.9.2.exe”,</span></p>
+### Download e Configuração do Firmware KCS v2
 
- <span lang=EN-US>(if your PCB chip is ESP32-WROOM-32E/32UE)
-chose “ESP32” and “develop” item.</span></p>
+1. **Baixar Ferramentas:**
+   - Baixe a ferramenta "ESP32 download tool" do link: [flash_download_tool_3.9.2.zip](https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip).
+   - Baixe o arquivo BIN do firmware no [Fórum da KinCony](https://www.kincony.com/forum/forumdisplay.php?fid=40).
 
- <img border=0 width=416 height=289 id="Imagem 144"
-src="how%20to%20use_arquivos/image001.png" alt="esp32 download tool"></p>
+2. **Abrir a Ferramenta:**
+   - Execute o programa `flash_download_tool_3.9.2.exe`.
 
- <span lang=EN-US>(if your PCB chip is ESP32-S3-WROOM-1U)
-chose “ESP32-S3” and workMode=“develop”&nbsp; loadMode: “usb” item.</span></p>
+3. **Selecionar Configurações de Chip:**
+   - Se o chip da sua PCB for **ESP32-WROOM-32E/32UE**, escolha:
+     - **ESP32** e o item **develop**.
 
- <img border=0 width=408 height=321 id="Imagem 143"
-src="how%20to%20use_arquivos/image002.png" alt=esp32-s3></p>
+   ![ESP32 Download Tool](how%20to%20use_arquivos/image001.png)
 
- <span lang=EN-US>c. Chose KCS v2 firmware BIN file and COM
-port then begin download. Total 5 steps.</span></p>
+   - Se o chip da sua PCB for **ESP32-S3-WROOM-1U**, escolha:
+     - **ESP32-S3** e os modos de trabalho **develop** e **usb**.
 
+   ![ESP32-S3 Download Tool](how%20to%20use_arquivos/image002.png)
+
+4. **Selecionar Arquivo e Porta COM:**
+   - Escolha o arquivo BIN do firmware KCS v2.
+   - Selecione a porta COM correspondente e inicie o download em 5 etapas.
  <img border=0 width=508 height=697 id="Imagem 142"
 src="how%20to%20use_arquivos/image003.png" alt="esp32 download tool"><span
 lang=EN-US><br>
