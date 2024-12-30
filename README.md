@@ -5,10 +5,10 @@ https://www.kincony.com/esp32-kcsv2-firmware.html
 
 
 
- <b><span lang=EN-US>how to use “KCS”v2 firmware for KinCony ESP32 board</span></b></p>
+### how to use “KCS”v2 firmware for KinCony ESP32 board
 
  <a href="https://www.kincony.com/" title=Home>Home</a>
- <a href="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf" title="User Guide" User Guid - how to use “KCS”v2 firmware…
+[https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pd]("User Guide" how to use “KCS”v2 firmware)
 
 
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
