@@ -11,7 +11,7 @@ https://www.kincony.com/
 
 https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf
 
-if you want to read by PDF file, <ahref="https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf"><download user guide PDF file/a>.</p>
+if you want to read by PDF file, "https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf
 
 1. Download “KCS” firmware to KinCony KC868-A series board.
 
