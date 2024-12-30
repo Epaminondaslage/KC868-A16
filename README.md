@@ -1,7 +1,20 @@
 # Guia de Uso do Firmware "KCS" v2 para o KC868-A16
+## KC868-A16 Smart Controller for home automation
 
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
 A128 AG AK AI AIO AP***
+
+## hardware resource:
+
+* Ethernet/WiFi/Bluetooth/RS485
+* 16 channel relay output
+* 16 channel digital input
+* 433MHz RF transmit
+* 433MHz RF receiver
+* 2 channel analog input (DC 0-5V)
+* 2 channel analog input (4-20mA)
+* 4 channel GPIO (pull-up resistor)
+* IIC extend port
 
 https://www.kincony.com/esp32-kcsv2-firmware.html
 
