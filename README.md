@@ -6,6 +6,9 @@
 
 https://github.com/Epaminondaslage/KC868-A16/blob/main/KC868-A_mqtt%20comands.md
 
+* MQTT para KC868-A16
+  https://www.kincony.com/forum/attachment.php?aid=2872
+
 ## Guia de Uso do Firmware "KCS" v2 para o KC868-A16
 
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
