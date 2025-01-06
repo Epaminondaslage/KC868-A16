@@ -1,5 +1,6 @@
 # KC868-A16 Smart Controller for home automation
 
+![Hardware KC 868-A16 ](how%20to%20use_arquivos/image001.png)
 
 ## KC868-A Series Board Protocol – MQTT Command
 
