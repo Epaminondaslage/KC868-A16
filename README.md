@@ -1,6 +1,10 @@
 # Guia de Uso do Firmware "KCS" v2 para o KC868-A16
 ## KC868-A16 Smart Controller for home automation
 
+
+# KC868-A Series Board Protocol – MQTT Command
+
+
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
 A128 AG AK AI AIO AP***
 
