@@ -3,6 +3,7 @@
 
 ## KC868-A Series Board Protocol – MQTT Command
 
+https://github.com/Epaminondaslage/KC868-A16/blob/main/KC868-A_mqtt%20comands.md
 
 ## Guia de Uso do Firmware "KCS" v2 para o KC868-A16
 
