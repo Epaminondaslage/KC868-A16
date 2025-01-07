@@ -18,9 +18,13 @@ https://github.com/Epaminondaslage/KC868-A16/blob/main/KC868-A_mqtt%20comands.md
 ***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
 A128 AG AK AI AIO AP***
 
-### Baixei os firmware e a ferramenta de flash o ESP32 : 
+### Firmware e a ferramenta de flash o ESP32 : 
 
-https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link
+* KCS Firmawares (site oficial): 
+  - https://www.kincony.com/forum/showthread.php?tid=7283
+
+* Firmaware em 12/2024 no meu gdrive
+  - https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link
 
 ## hardware resource:
 
