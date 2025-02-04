@@ -72,11 +72,8 @@ https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf
  <img border=0 width=508 height=697 id="Imagem 142" src="how%20to%20use_arquivos/image003.png" alt="esp32 download tool"><span lang=EN-US><br>
 <b>2. Use o cabo ethernet or WiFi config setting.</b></span></p>
 
- <span lang=EN-US>a. use ethernet cable connect board to your
-router, make sure your computer also connect with same router, just all in one
-local network.<br>
-b. Power on of your board, you can use KinCony scan device tool to find output
-board IP address.</span></p>
+1. use a placa de conexão do cabo Ethernet ao seu roteador, certifique-se de que seu computador também se conecte ao mesmo roteador, apenas em uma rede local.
+2. Ligue sua placa, você pode usar a ferramenta de digitalização do dispositivo KinCony para encontrar o endereço IP da placa de saída.
 
  <a href="https://www.kincony.com/download/UDP_SCAN_LIST.zip"><span
 lang=EN-US>https://www.kincony.com/download/KinCony-SCAN_Device.zip</span></a></p>
