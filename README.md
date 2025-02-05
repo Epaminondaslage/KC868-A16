@@ -26,8 +26,8 @@ A128 AG AK AI AIO AP***
 * Firmaware em 12/2024 no meu gdrive
   - https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link
 
-* Firmware no site kincony
- - https://www.kincony.com/forum/showthread.php?tid=7283  
+* Firmware no site kincony versão 2.2.10  janeiro 2025
+  - https://www.kincony.com/forum/showthread.php?tid=7283  
 
 ## hardware resource:
 
