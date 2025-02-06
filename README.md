@@ -150,36 +150,46 @@ input port how to work with OUTPUT ports.</span></p>
 
  <span lang=EN-US>&nbsp;</span></p>
 
- <span lang=EN-US>“Reverse Level”: if checked, the effective
-level at the digital input port becomes inverted. Just digital input use by
-“HIGH” or “LOW” level. Usually digital input port short with GND = trigger.</span></p>
 
- <img border=0 width=566 height=388 id="Imagem 136"
+## Reverse Level - Inversão de Nível da Entrada Digital  
+
+Se marcado, o nível efetivo na porta de entrada digital será **invertido**.  
+A entrada digital é utilizada apenas com nível **"HIGH"** ou **"LOW"**.  
+
+Normalmente, a porta de entrada digital conectada ao **GND** = **acionamento**.  
+
+<img border=0 width=566 height=388 id="Imagem 136"
 src="how%20to%20use_arquivos/image140.jpg" alt="output type"></p>
 
- Here is OUTPUT webpage.</p>
+ Aqui está a homepage de saida.</p>
 
  <img border=0 width=554 height=402 id="Imagem 135"
 src="how%20to%20use_arquivos/image014.png" alt="output type"></p>
 
- <span lang=EN-US>“hold on”: keep the state after turn ON/OFF</span></p>
+## Hold on
+keep the state after turn ON/OFF
 
- <span lang=EN-US>“delay”:&nbsp; after you turn ON digital
-output, will auto turn OFF after a “delay time” you have preset.</span></p>
+## Delay
+ 
+ Depois de ligar a saída digital, ela será desligada automaticamente após um "tempo de atraso" pré-definido.
 
- <span lang=EN-US>“jogging”: when hold on the INPUT with GND,
-digital output is ON, release INPUT with GND, digital output will be OFF right
-now.</span></p>
+## Jogging  
+
+Quando mantenho o **INPUT** conectado ao **GND**, a **saída digital** fica **LIGADA**.  
+Ao soltar o **INPUT** do **GND**, a **saída digital** será **DESLIGADA** imediatamente.  
 
  <img border=0 width=567 height=299 id="Imagem 134"
 src="how%20to%20use_arquivos/image141.jpg" alt=interlock></p>
 
- <span lang=EN-US>“Interlock group”: set interlock group for
-digital output. If set to “0” , disable interlock function. If “Output1” set to
-“1” and “Output2” set to “1” = Output1 and Output2 work with interlock. If
-“Output3” set to “2” and “Output4” set to “2” = Output3 and Output4 work with
-interlock. For example , KC868-A64 have 64 channel digital output, so total
-will have 64/2=32 interlock groups.</span></p>
+ ## Grupo de Intertravamento  
+
+**"Grupo de intertravamento"**: define o grupo de intertravamento para a saída digital. Se definido como **"0"**, a função de intertravamento será desativada.  
+
+- Se **"Output1"** for definido como **"1"** e **"Output2"** for definido como **"1"**, então **Output1 e Output2 trabalharão com intertravamento**.  
+- Se **"Output3"** for definido como **"2"** e **"Output4"** for definido como **"2"**, então **Output3 e Output4 trabalharão com intertravamento**.  
+
+Por exemplo, o **KC868-A64** possui **64 saídas digitais**, portanto, o total será **64/2 = 32 grupos de intertravamento**.  
+
 
  <img border=0 width=566 height=309 id="Imagem 133"
 src="how%20to%20use_arquivos/image142.jpg" alt="rf 433"></p>
