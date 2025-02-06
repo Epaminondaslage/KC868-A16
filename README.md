@@ -1,33 +1,33 @@
-# KC868-A16 Smart Controller for home automation
+# KC868-A16 Smart Controller para automação residencial
 
-![Hardware KC 868-A16 ](https://github.com/Epaminondaslage/Tasmota/blob/main/img/a16-connections.jpg)
+![Hardware KC 868-A16](https://github.com/Epaminondaslage/Tasmota/blob/main/img/a16-connections.jpg)
 
-## KC868-A Series Board Protocol – MQTT Command
+# KC868-A Series Board Protocol – Comandos MQTT  
 
-https://github.com/Epaminondaslage/KC868-A16/blob/main/KC868-A_mqtt%20comands.md
+🔗 [KC868-A16 – Comandos MQTT](https://github.com/Epaminondaslage/KC868-A16/blob/main/KC868-A_mqtt%20comands.md)  
 
-* MQTT para KC868-A16
-  https://www.kincony.com/forum/attachment.php?aid=2872
+## MQTT para KC868-A16  
+📎 [Documento MQTT](https://www.kincony.com/forum/attachment.php?aid=2872)  
 
-## "KCS" firmware system 
-  https://www.kincony.com/forum/forumdisplay.php?fid=40
+## "KCS" Firmware System  
+📌 [Fórum Oficial](https://www.kincony.com/forum/forumdisplay.php?fid=40)  
 
+## Guia de Uso do Firmware "KCS" v2 para o KC868-A16  
 
-## Guia de Uso do Firmware "KCS" v2 para o KC868-A16
+> **Nota:** Este documento se aplica aos controladores inteligentes KinCony:  
+> KC868-AM, ASR, A2, A4, A4S, A6, A8, A8M, A8S, A16, A16S, E16S, A32, A32M, A64, A128, AG, AK, AI, AIO, AP.  
 
-***Note: This document use for KinCony smart controller: KC868-AM ASR A2 A4 A4S A6 A8 A8M A8S A16 A16S E16S A32 A32M A64
-A128 AG AK AI AIO AP***
+### Firmware e Ferramenta de Flash para ESP32  
 
-### Firmware e a ferramenta de flash o ESP32 : 
+🔹 **KCS Firmwares (Site Oficial):**  
+📌 [Acesse aqui](https://www.kincony.com/forum/showthread.php?tid=7283)  
 
-* KCS Firmawares (site oficial): 
-  - https://www.kincony.com/forum/showthread.php?tid=7283
+🔹 **Firmware (Dezembro/2024) no meu Google Drive:**  
+📂 [Baixar](https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link)  
 
-* Firmaware em 12/2024 no meu gdrive
-  - https://drive.google.com/drive/folders/1Fup9QsRdzn4ofuia9ehP4mfLLNi64piE?usp=drive_link
+🔹 **Firmware Kincony v2.2.10 (Janeiro/2025):**  
+📌 [Acesse aqui](https://www.kincony.com/forum/showthread.php?tid=7283)  
 
-* Firmware no site kincony versão 2.2.10  janeiro 2025
-  - https://www.kincony.com/forum/showthread.php?tid=7283  
 
 ## hardware resource:
 
