@@ -29,45 +29,46 @@
 📌 [Acesse aqui](https://www.kincony.com/forum/showthread.php?tid=7283)  
 
 
-## hardware resource:
+## Hardware Resource  
 
-* Ethernet/WiFi/Bluetooth/RS485
-* 16 channel relay output
-* 16 channel digital input
-* 433MHz RF transmit
-* 433MHz RF receiver
-* 2 channel analog input (DC 0-5V)
-* 2 channel analog input (4-20mA)
-* 4 channel GPIO (pull-up resistor)
-* IIC extend port
+- Ethernet/WiFi/Bluetooth/RS485  
+- 16 canais de saída de relé  
+- 16 canais de entrada digital  
+- Transmissor RF 433MHz  
+- Receptor RF 433MHz  
+- 2 canais de entrada analógica (DC 0-5V)  
+- 2 canais de entrada analógica (4-20mA)  
+- 4 canais GPIO (com resistor pull-up)  
+- Porta de expansão IIC  
 
-https://www.kincony.com/esp32-kcsv2-firmware.html
+🔗 [Mais informações sobre o firmware KCS v2](https://www.kincony.com/esp32-kcsv2-firmware.html)  
 
-### how to use “KCS”v2 firmware for KinCony ESP32 board
+## Como Usar o Firmware "KCS" v2 para a Placa KinCony ESP32  
 
-https://www.kincony.com/
+🔹 [Site Oficial da KinCony](https://www.kincony.com/)  
+📄 [Guia do Usuário - KCS v2](https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf)  
 
-https://www.kincony.com/images/user-guide/KCS_V2/KCS_user_guide_v2.0.pdf
+### Download e Configuração do Firmware KCS v2  
 
-### Download e Configuração do Firmware KCS v2
+1. **Baixar Ferramentas:**  
+   - Baixe a ferramenta **ESP32 download tool** do link:  
+     📂 [flash_download_tool_3.9.2.zip](https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip)  
+   - Baixe o arquivo BIN do firmware no **Fórum da KinCony**:  
+     📌 [Acesse aqui](https://www.kincony.com/forum/forumdisplay.php?fid=40)  
 
-1. **Baixar Ferramentas:**
-   - Baixe a ferramenta "ESP32 download tool" do link: [flash_download_tool_3.9.2.zip](https://www.kincony.com/wp-content/uploads/2022/08/flash_download_tool_3.9.2.zip).
-   - Baixe o arquivo BIN do firmware no [Fórum da KinCony](https://www.kincony.com/forum/forumdisplay.php?fid=40).
+2. **Abrir a Ferramenta:**  
+   - Execute o programa `flash_download_tool_3.9.2.exe`.  
 
-2. **Abrir a Ferramenta:**
-   - Execute o programa `flash_download_tool_3.9.2.exe`.
+3. **Selecionar Configurações de Chip:**  
+   - **Se o chip da sua PCB for ESP32-WROOM-32E/32UE**, escolha:  
+     - **ESP32** e o item **develop**.  
 
-3. **Selecionar Configurações de Chip:**
-   - Se o chip da sua PCB for **ESP32-WROOM-32E/32UE**, escolha:
-     - **ESP32** e o item **develop**.
+     ![ESP32 Download Tool](how%20to%20use_arquivos/image001.png)  
 
-   ![ESP32 Download Tool](how%20to%20use_arquivos/image001.png)
+   - **Se o chip da sua PCB for ESP32-S3-WROOM-1U**, escolha:  
+     - **ESP32-S3** e os modos de trabalho **develop** e **usb**.  
 
-   - Se o chip da sua PCB for **ESP32-S3-WROOM-1U**, escolha:
-     - **ESP32-S3** e os modos de trabalho **develop** e **usb**.
-
-   ![ESP32-S3 Download Tool](how%20to%20use_arquivos/image002.png)
+     ![ESP32-S3 Download Tool](how%20to%20use_arquivos/image002.png)  
 
 4. **Selecionar Arquivo e Porta COM:**
    - Escolha o arquivo BIN do firmware KCS v2.
