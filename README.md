@@ -1,4 +1,4 @@
-# KC868-A16 Smart Controller para automação residencial
+# KC868-A16 Smart Controller para Automação Residencial
 
 ![Hardware KC 868-A16](https://github.com/Epaminondaslage/Tasmota/blob/main/img/a16-connections.jpg)
 
@@ -85,71 +85,57 @@ lang=EN-US>https://www.kincony.com/download/KinCony-SCAN_Device.zip</span></a></
  <img border=0 width=567 height=257 id="Imagem 141"
 src="how%20to%20use_arquivos/image137.jpg" alt="scan device"></p>
 
- <span lang=EN-US>Total 5 steps to find out IP address.</span></p>
+ ## Uso da Ferramenta de Varredura de Dispositivos KinCony
 
- <span lang=EN-US>Step-1: chose your computer network adapter
-when you are using.</span></p>
+![Scan Device](how%20to%20use_arquivos/image137.jpg)
 
- <span lang=EN-US>Step-2: chose your computer IP address
-item.</span></p>
+## Passos para encontrar o endereço IP
 
- <span lang=EN-US>Step-3: click “StartMonitorPort” button.</span></p>
+1. Escolha o adaptador de rede do seu computador que está em uso.
+2. Escolha o item do endereço IP do seu computador.
+3. Clique no botão **"StartMonitorPort"**.
+4. Clique no botão **"SCAN"**.
+5. O endereço IP da placa (Ethernet ou WiFi), ID e nome do tipo serão listados.
 
- <span lang=EN-US>Step-4: click “SCAN” button.</span></p>
+Se esta for a primeira vez que a placa for ligada, ela será encontrada pelo endereço IP da Ethernet, pois, por padrão, o WiFi opera no modo **"AP"**.  
+Após configurar o WiFi no modo **"STA"**, você poderá encontrar o endereço IP do WiFi usando a ferramenta KinCony Scan Device.
 
- <span lang=EN-US>Step-5: board’s ethernet or WiFi IP address
-, ID and type name will be listed.</span></p>
+Você pode usar o endereço IP da Ethernet para acessar a configuração da placa pelo navegador.
 
- <span lang=EN-US>&nbsp;</span></p>
+### Observação:
+Se desejar configurar a placa apenas pelo WiFi, ao ligá-la, seu computador encontrará o ponto de acesso **"AP"** com um sinal WiFi nomeado como **"Nome da Placa" + "ID"**.
 
- <span lang=EN-US>If you first time power on , you board will
-be found by ethernet IP address. Because your WiFi is work as “AP” mode as
-default. After you config your WiFi as “STA” mode, you will find out the WiFi
-IP address by KinCony scan device tool.</span></p>
+![Modo AP](how%20to%20use_arquivos/image006.png)
 
- <span lang=EN-US>You can use ethernet IP address login by
-web browser to config board setting.</span></p>
+## Conectando ao Modo AP
 
- <span lang=EN-US>&nbsp;</span></p>
+Deixe seu computador se conectar ao **"AP"**, que não possui senha.  
+Após a conexão, acesse a página de login pelo navegador usando:  
+[http://192.168.4.1](http://192.168.4.1)
 
- <span lang=EN-US>Note: if you want config only by WiFi, when
-power on, your computer will find the “AP” hotspot, WiFi signal named “board
-name” + “ID”.</span></p>
+Se você não conseguir ver o **"AP"**, mantenha pressionado o botão de função da placa (ESP32 GPIO0) por mais de **10 segundos**. Isso irá restaurar as configurações de fábrica, onde o estado padrão é **"AP"**.
 
- <img border=0 width=403 height=660 id="Imagem 140"
-src="how%20to%20use_arquivos/image006.png" alt=ap></p>
+![Login IoT](how%20to%20use_arquivos/image007.png)
 
- <span lang=EN-US>Let your computer connect to the “AP”, it’s
-without password, after you connected, just use </span><a
-href="http://192.168.4.1"><span lang=EN-US>http://192.168.4.1</span></a><span
-lang=EN-US> to login by webpage.</span></p>
+## Login via Ethernet ou WiFi
 
- <span lang=EN-US>If you can’t see the “AP”, you can “hold
-on” board’s function button (ESP32 GPIO0) &gt;10 seconds, then board will be
-set to factory, default state is “AP”.</span></p>
+Você pode acessar a página de configuração pelo endereço IP da Ethernet ou do WiFi.  
+Exemplo de login usando o endereço IP da Ethernet: **192.168.1.200**.
 
- <img border=0 width=516 height=490 id="Imagem 139"
-src="how%20to%20use_arquivos/image007.png" alt="iot login"></p>
+Os dados padrão de login são:  
 
- <span lang=EN-US>You can login webpage by ethernet IP or
-WiFi IP. Here is sample login by ethernet IP address 192.168.1.200</span></p>
+**Usuário:** `admin`  
+**Senha:** `admin`
 
- <span lang=EN-US>Login user name and password default are
-“admin”&nbsp; “admin”</span></p>
+![Página Inicial](how%20to%20use_arquivos/image138.jpg)
 
- <img border=0 width=566 height=384 id="Imagem 138"
-src="how%20to%20use_arquivos/image138.jpg" alt="home page"></p>
+Após o login, a página inicial será exibida, mostrando alguns parâmetros do dispositivo.
 
- <span lang=EN-US>You can see this home page. </span>Some
-parameters are shown.</p>
+![Página de Entrada](how%20to%20use_arquivos/image139.jpg)
 
- <img border=0 width=567 height=401 id="Imagem 137"
-src="how%20to%20use_arquivos/image139.jpg" alt="input webpage"></p>
+## Configuração de Entradas Digitais
 
- <span lang=EN-US>Here is INPUT webpage. Set every digital
-input port how to work with OUTPUT ports.</span></p>
-
- <span lang=EN-US>&nbsp;</span></p>
+Na página **INPUT**, você pode configurar como cada porta de entrada digital interage com as portas de saída.
 
 
 ## Reverse Level - Inversão de Nível da Entrada Digital  
@@ -192,468 +178,394 @@ src="how%20to%20use_arquivos/image141.jpg" alt=interlock></p>
 Por exemplo, o **KC868-A64** possui **64 saídas digitais**, portanto, o total será **64/2 = 32 grupos de intertravamento**.  
 
 
- <img border=0 width=566 height=309 id="Imagem 133"
-src="how%20to%20use_arquivos/image142.jpg" alt="rf 433"></p>
+## Página de Configuração RF
 
- <span lang=EN-US>Here is RF webpage. It support “Learn” ,
-“transmit”, “Delete” RF code. Support EV1527 or PT2262, PT2264 wireless remote
-code.<br>
-When press “Learn” blue button, begin study mode, wait for you press remote’s
-button, it will show message:</span></p>
+![RF 433](how%20to%20use_arquivos/image142.jpg)
 
- <img border=0 width=566 height=226 id="Imagem 132"
-src="how%20to%20use_arquivos/image143.jpg" alt="rf 433"></p>
+Nesta página, é possível **"Aprender"**, **"Transmitir"** e **"Excluir"** códigos RF.  
+Compatível com os códigos de controle remoto sem fio **EV1527, PT2262 e PT2264**.
 
- <span lang=EN-US>Then press one button of remote:</span></p>
+Quando pressionar o botão azul **"Learn"**, o modo de aprendizado será iniciado.  
+Aguarde e pressione um botão no controle remoto. A seguinte mensagem será exibida:
 
- <img border=0 width=566 height=425 id="Imagem 131"
-src="how%20to%20use_arquivos/image144.jpg" alt="rf 433"></p>
+![RF 433](how%20to%20use_arquivos/image143.jpg)
 
- <span lang=EN-US>If learn signal successful, will show:</span></p>
+Em seguida, pressione um botão do controle remoto:
 
- <img border=0 width=567 height=291 id="Imagem 130"
-src="how%20to%20use_arquivos/image145.jpg" alt="rf 433"></p>
+![RF 433](how%20to%20use_arquivos/image144.jpg)
 
- <span lang=EN-US>If learn signal failure or time out , will
-show:</span></p>
+Se o sinal for aprendido com sucesso, será exibido:
 
- <img border=0 width=567 height=266 id="Imagem 129"
-src="how%20to%20use_arquivos/image146.jpg" alt="rf 433"></p>
+![RF 433](how%20to%20use_arquivos/image145.jpg)
 
- <span lang=EN-US>After you learned signal, then it will be
-saved on controller.</span></p>
+Se o aprendizado falhar ou houver um tempo limite, será exibido:
 
- <img border=0 width=566 height=454 id="Imagem 128"
-src="how%20to%20use_arquivos/image147.jpg" alt="ir webpage"></p>
+![RF 433](how%20to%20use_arquivos/image146.jpg)
 
- <span lang=EN-US>Here is IR webpage. It support “Learn” ,
-“transmit”, “Delete” IR code. Such as TV, DVD, air conditioner, fans or other
-IR devices.</span></p>
+Após o aprendizado do sinal, ele será salvo no controlador.
 
- <span lang=EN-US>When press “Learn” blue button, begin study
-mode, wait for you press IR remote’s button, it will show message:</span></p>
+---
 
- <img border=0 width=566 height=230 id="Imagem 127"
-src="how%20to%20use_arquivos/image148.jpg" alt=ir></p>
+## Página de Configuração IR
 
- <span lang=EN-US>Then press one button of remote:</span></p>
+![IR Webpage](how%20to%20use_arquivos/image147.jpg)
 
- <img border=0 width=566 height=425 id="Imagem 126"
-src="how%20to%20use_arquivos/image149.jpg" alt="ir remote"></p>
+Nesta página, é possível **"Aprender"**, **"Transmitir"** e **"Excluir"** códigos IR.  
+Compatível com dispositivos como **TVs, DVDs, ar-condicionado, ventiladores** e outros dispositivos infravermelhos.
 
- <span lang=EN-US>If learn signal successful, will show:</span></p>
+Ao pressionar o botão azul **"Learn"**, o modo de aprendizado será iniciado.  
+Aguarde e pressione um botão no controle remoto IR. A seguinte mensagem será exibida:
 
- <img border=0 width=567 height=277 id="Imagem 125"
-src="how%20to%20use_arquivos/image150.jpg" alt="ir remote"></p>
+![IR](how%20to%20use_arquivos/image148.jpg)
 
- <span lang=EN-US>If learn signal failure or time out , will
-show:</span></p>
+Em seguida, pressione um botão do controle remoto:
 
- <img border=0 width=567 height=281 id="Imagem 124"
-src="how%20to%20use_arquivos/image151.jpg" alt="ir remote"></p>
+![IR Remote](how%20to%20use_arquivos/image149.jpg)
 
- <span lang=EN-US>After you learned signal, then it will be
-saved on controller.</span></p>
+Se o sinal for aprendido com sucesso, será exibido:
 
- <img border=0 width=567 height=250 id="Imagem 123"
-src="how%20to%20use_arquivos/image152.jpg" alt=ir></p>
+![IR Remote](how%20to%20use_arquivos/image150.jpg)
 
- <img border=0 width=566 height=453 id="Imagem 122"
-src="how%20to%20use_arquivos/image153.jpg" alt=sensor></p>
+Se o aprendizado falhar ou houver um tempo limite, será exibido:
 
- <span lang=EN-US>Here is sensor webpage. You can set
-different sensor model for 1-wire GPIO ports.</span></p>
+![IR Remote](how%20to%20use_arquivos/image151.jpg)
 
- <span lang=EN-US>Temperature Threshold:</span></p>
+Após o aprendizado do sinal, ele será salvo no controlador.
 
- <span lang=EN-US>If the preset difference is exceeded,
-temperature data will be auto updated.</span></p>
+---
 
- <span lang=EN-US>For example: “Temperature Threshold”
-=2&nbsp; now temperature is 28°C, so next time , when new temperature is
-&gt;30°C(28+2) or &lt;26°C(28-2) will update.</span></p>
+## Página de Configuração de Sensores
 
- <span lang=EN-US>&nbsp;</span></p>
+![Sensor Webpage](how%20to%20use_arquivos/image152.jpg)
 
- <span lang=EN-US>Humidity Threshold:</span></p>
+Nesta página, você pode configurar diferentes sensores para as portas GPIO de 1-wire.
 
- <span lang=EN-US>If the preset difference is exceeded,
-humidity data will be auto updated.</span></p>
+### **Limite de Temperatura**
+Se a diferença predefinida for excedida, os dados de temperatura serão **atualizados automaticamente**.
 
- <span lang=EN-US>For example: “Humidity Threshold” =10&nbsp;
-now humidity is 75%, so next time , when new humidity is &gt;85%(75+10) or
-&lt;65%(75-10) will update.</span></p>
+Exemplo:  
+Se o **"Limite de Temperatura"** for **2°C** e a temperatura atual for **28°C**,  
+os dados serão atualizados quando a temperatura for **maior que 30°C (28+2)** ou **menor que 26°C (28-2)**.
 
- <img border=0 width=566 height=603 id="Imagem 121"
-src="how%20to%20use_arquivos/image154.jpg" alt="iot monitor"></p>
+### **Limite de Umidade**
+Se a diferença predefinida for excedida, os dados de umidade serão **atualizados automaticamente**.
 
- Here is monitor webpage.</p>
+Exemplo:  
+Se o **"Limite de Umidade"** for **10%** e a umidade atual for **75%**,  
+os dados serão atualizados quando a umidade for **maior que 85% (75+10)** ou **menor que 65% (75-10)**.
 
- <img border=0 width=566 height=66 id="Imagem 120"
-src="how%20to%20use_arquivos/image155.jpg" alt="protocol monitor"></p>
+## Página de Monitoramento
 
- <span lang=EN-US>Monitor all protocol work state, whether
-have connect to server or have a client have connected.</span></p>
+![Monitor IoT](how%20to%20use_arquivos/image154.jpg)
 
- <img border=0 width=566 height=167 id="Imagem 119"
-src="how%20to%20use_arquivos/image156.jpg" alt=adc></p>
+Nesta página, é possível monitorar o estado de funcionamento de todos os protocolos.  
+É possível verificar se há conexão com o servidor ou se algum cliente está conectado.
 
- <span lang=EN-US>Monitor ADC value.</span></p>
+![Monitor de Protocolo](how%20to%20use_arquivos/image155.jpg)
 
- <span lang=EN-US>In order to easily view the values of each
-sensor, we can set a separate sensor channel name, range, display unit, and
-automatically reported threshold for each sensor.</span></p>
+Também é possível monitorar os valores do ADC.
 
- <span lang=EN-US>Just click “gear” image, will show the
-config page.</span></p>
+![Monitor ADC](how%20to%20use_arquivos/image156.jpg)
 
- <img border=0 width=566 height=385 id="Imagem 118"
-src="how%20to%20use_arquivos/image157.jpg" alt="adc setting"></p>
+Para facilitar a visualização dos valores de cada sensor, podemos configurar:  
+- Nome do canal do sensor  
+- Faixa de medição  
+- Unidade de exibição  
+- Limite para atualização automática  
 
- <span lang=EN-US>Fox example, we set a water level analog
-sensor, name is “water level”, unit is M (meter), Custom value1 and value2
-means: if you are using DC 0-5v analog sensor, when sensor voltage is 0v,
-what’s “Custom value1” corresponding value. when sensor voltage is 5v, what’s
-“Custom value2” corresponding value.</span></p>
+Para acessar a página de configuração, clique no ícone de **"engrenagem"**.
 
- So sensor dc 0-5v — convert à 0-3 meter</p>
+![Configuração ADC](how%20to%20use_arquivos/image157.jpg)
 
- <span lang=EN-US>If you are using sensor 4-20mA, so 4-20mA
-4mA=Custom value1, 20mA is Custom value2.</span></p>
+### **Exemplo de Configuração**
+Se configurarmos um sensor analógico de nível de água:
+- Nome: **"Nível da Água"**
+- Unidade: **M (metro)**
+- **Custom value1** e **Custom value2** definem a conversão do sensor analógico de 0-5V.  
+  - Se a tensão do sensor for **0V**, qual o valor correspondente?  
+  - Se a tensão do sensor for **5V**, qual o valor correspondente?  
 
- <img border=0 width=567 height=138 id="Imagem 117"
-src="how%20to%20use_arquivos/image158.jpg" alt=adc></p>
+Exemplo: Um sensor de **0-5V** pode ser convertido para **0-3 metros**.
 
- <span lang=EN-US>Then you will see the actually sensor name
-, value and unit on the monitor webpage.</span></p>
+Se estiver usando um sensor de **4-20mA**, a conversão será:
+- **4mA = Custom value1**
+- **20mA = Custom value2**
 
- <img border=0 width=566 height=226 id="Imagem 116"
-src="how%20to%20use_arquivos/image159.jpg" alt="input rename"></p>
+![Leitura ADC](how%20to%20use_arquivos/image158.jpg)
 
- <span lang=EN-US>Double click on the input name’s TEXT can
-be rename by yourself.</span></p>
+Após a configuração, o nome do sensor, o valor e a unidade serão exibidos na página de monitoramento.
 
- <img border=0 width=567 height=244 id="Imagem 115"
-src="how%20to%20use_arquivos/image160.jpg" alt=rename></p>
+![Renomear Entrada](how%20to%20use_arquivos/image159.jpg)
 
- After renamed.</p>
+### **Renomeando Entradas e Saídas**
+- **Clique duas vezes** no nome de uma entrada para renomeá-la.
 
- <img border=0 width=567 height=273 id="Imagem 114"
-src="how%20to%20use_arquivos/image161.jpg" alt="output rename"></p>
+![Renomeação](how%20to%20use_arquivos/image160.jpg)
 
- <span lang=EN-US>Use the same way (double click TEXT) can
-rename of the output ports.</span></p>
+Após a alteração, o novo nome será exibido.
 
- <img border=0 width=566 height=398 id="Imagem 113"
-src="how%20to%20use_arquivos/image162.jpg" alt="monitor sensor state"></p>
+![Renomeação de Saída](how%20to%20use_arquivos/image161.jpg)
 
- <span lang=EN-US>Green ico for INPUT means triggered.</span></p>
+O mesmo procedimento pode ser usado para renomear as **saídas**.
 
- <span lang=EN-US>Green ico for OUTPUT means output is ON
-state.</span></p>
+![Estado do Sensor](how%20to%20use_arquivos/image162.jpg)
 
- <img border=0 width=567 height=470 id="Imagem 112"
-src="how%20to%20use_arquivos/image163.jpg" alt=ifttt></p>
+### **Ícones de Estado**
+- **Ícone verde para ENTRADA**: Significa que foi acionada.  
+- **Ícone verde para SAÍDA**: Significa que a saída está LIGADA.
 
- <span lang=EN-US>Here is IFTTT webpage. It can create IFTTT
-AUTOMATION. Press “Run” blue button for running testing. </span>Press “Edit”
-yellow button for modify.</p>
+---
 
- <img border=0 width=567 height=446 id="Imagem 111"
-src="how%20to%20use_arquivos/image164.jpg" alt=ifttt></p>
+## Página de Automação IFTTT
 
- <img border=0 width=567 height=248 id="Imagem 110"
-src="how%20to%20use_arquivos/image165.jpg" alt=ifttt></p>
+![Página IFTTT](how%20to%20use_arquivos/image163.jpg)
 
- <span lang=EN-US>If your board support 4G SIM7600 module,
-there will have “SMS” and “voice call” ICO.</span></p>
+Nesta página, é possível criar **automação IFTTT**.  
+- Pressione o botão azul **"Run"** para testar a execução.  
+- Pressione o botão amarelo **"Edit"** para modificar a automação.
 
- <span lang=EN-US>You can rename the AUTOMATION name. </span>“enable”
-or “disable” it.</p>
+![Configuração IFTTT](how%20to%20use_arquivos/image164.jpg)
 
- <img border=0 width=567 height=305 id="Imagem 109"
-src="how%20to%20use_arquivos/image166.jpg" alt=ifttt></p>
+![Configuração IFTTT](how%20to%20use_arquivos/image165.jpg)
 
- DI options:</p>
+Se sua placa suportar o **módulo 4G SIM7600**, haverá opções para envio de **SMS** e **chamadas de voz**.
 
- <img border=0 width=566 height=290 id="Imagem 108"
-src="how%20to%20use_arquivos/image167.jpg" alt=ifttt></p>
+Também é possível renomear a automação, além de **ativá-la ou desativá-la**.
 
- AI options:</p>
+![Ativar ou Desativar Automação](how%20to%20use_arquivos/image166.jpg)
 
- <img border=0 width=566 height=362 id="Imagem 107"
-src="how%20to%20use_arquivos/image168.jpg" alt=ifttt></p>
+## Opções de Configuração
 
- RF options:</p>
+### **Opções de Entrada Digital (DI)**
+![Opções DI](how%20to%20use_arquivos/image167.jpg)
 
- <img border=0 width=567 height=363 id="Imagem 106"
-src="how%20to%20use_arquivos/image169.jpg" alt=ifttt></p>
+### **Opções de Entrada Analógica (AI)**
+![Opções AI](how%20to%20use_arquivos/image168.jpg)
 
- Sensor options:</p>
+### **Opções de RF**
+![Opções RF](how%20to%20use_arquivos/image169.jpg)
 
- <img border=0 width=567 height=387 id="Imagem 105"
-src="how%20to%20use_arquivos/image170.jpg" alt=ifttt></p>
+### **Opções de Sensores**
+![Opções de Sensores](how%20to%20use_arquivos/image170.jpg)
 
- <span lang=EN-US>Timer options:</span></p>
+---
 
- <span lang=EN-US>If your board support 4G SIM7600 module,
-there will have “SMS” and “voice call” options:</span></p>
+## **Opções de Temporizador**
+Se sua placa for compatível com o **módulo 4G SIM7600**, as opções de **SMS** e **chamada de voz** estarão disponíveis.
 
- <img border=0 width=567 height=274 id="Imagem 104"
-src="how%20to%20use_arquivos/image171.jpg" alt=ifttt></p>
+![Opções de Temporizador](how%20to%20use_arquivos/image171.jpg)
 
- SMS options:</p>
+### **Opções de SMS**
+![Opções de SMS](how%20to%20use_arquivos/image172.jpg)
 
- <img border=0 width=567 height=268 id="Imagem 103"
-src="how%20to%20use_arquivos/image172.jpg" alt=ifttt></p>
+### **Opções de Chamadas de Voz**
+![Opções de Chamadas de Voz](how%20to%20use_arquivos/image173.jpg)
 
- Voice call options:</p>
+---
 
- <img border=0 width=567 height=442 id="Imagem 102"
-src="how%20to%20use_arquivos/image173.jpg" alt=ifttt></p>
+## **Opções Lógicas**
+Se a opção **[AND Lógico]** estiver ativada, **todas as condições IF devem ser atendidas** antes da execução da ação.  
+Se a opção estiver **desativada**, todas as condições IF funcionarão com a lógica **"OU"**.
 
- <span lang=EN-US>If enable [logical “AND”] option, All IF
-conditions need to be met before the action can be executed. </span>If
-“disable” just All IF conditions is “OR” logical.</p>
+![Configuração Lógica](how%20to%20use_arquivos/image174.jpg)
 
- <img border=0 width=567 height=350 id="Imagem 101"
-src="how%20to%20use_arquivos/image174.jpg" alt=ifttt></p>
+---
 
- <span lang=EN-US>DO options:</span></p>
+## **Opções de Saída Digital (DO)**
 
- <span lang=EN-US>you can set and separated by a “space”. You
-can enter “1 2 3 4 5” or “1-5” in the corresponding option to do something of
-digital output No.1-5</span></p>
+Você pode definir várias saídas digitais separadas por um **espaço**.  
+Por exemplo, insira `"1 2 3 4 5"` ou `"1-5"` na opção correspondente para ativar ou desativar as saídas digitais **1 a 5**.
 
- <img border=0 width=567 height=326 id="Imagem 100"
-src="how%20to%20use_arquivos/image175.jpg" alt=ifttt><span lang=EN-US><br>
-Fox example:</span></p>
+![Opções DO](how%20to%20use_arquivos/image175.jpg)
 
- <span lang=EN-US>The config photo that means:</span></p>
+### **Exemplo de Configuração**
+A imagem abaixo representa a seguinte configuração:
+- **Ligar** as saídas digitais **1, 2 e 3**
+- **Desligar** as saídas digitais **4, 5 e 6**
+- **Alternar** (toggle) as saídas digitais **7, 9, 10, 15-32**
 
- <span lang=EN-US>Turn ON digital output 1,2,3,</span></p>
+![Exemplo de Configuração](how%20to%20use_arquivos/image176.jpg)
 
- <span lang=EN-US>Turn OFF digital output 4,5,6</span></p>
+---
 
- Toggle digital output
-7,9,10,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32</p>
+## **Opções de Saída Analógica (AO)**
+![Opções AO](how%20to%20use_arquivos/image177.jpg)
 
- <img border=0 width=566 height=352 id="Imagem 99"
-src="how%20to%20use_arquivos/image176.jpg" alt=ifttt></p>
+## Opções de Configuração
 
- AO options:</p>
+### **Opções de RF**
+![Opções RF](how%20to%20use_arquivos/image178.jpg)
 
- <img border=0 width=567 height=354 id="Imagem 98"
-src="how%20to%20use_arquivos/image177.jpg" alt=ifttt></p>
+### **Opções de Infravermelho (IR)**
+![Opções IR](how%20to%20use_arquivos/image179.jpg)
 
- RF options:</p>
+### **Opções de Atraso (Delay)**
+![Opções Delay](how%20to%20use_arquivos/image180.jpg)
 
- <img border=0 width=567 height=354 id="Imagem 97"
-src="how%20to%20use_arquivos/image178.jpg" alt=ifttt></p>
+### **Opções de Protocolo Personalizado**
+![Protocolo Personalizado](how%20to%20use_arquivos/image181.jpg)
 
- IR options:</p>
+### **Opções de SMS**
+![Opções SMS](how%20to%20use_arquivos/image182.jpg)
 
- <img border=0 width=567 height=343 id="Imagem 96"
-src="how%20to%20use_arquivos/image179.jpg" alt=ifttt></p>
+### **Opções de Chamadas de Voz**
+![Opções de Chamadas de Voz](how%20to%20use_arquivos/image183.jpg)
 
- Delay options:</p>
+---
 
- <img border=0 width=567 height=352 id="Imagem 95"
-src="how%20to%20use_arquivos/image180.jpg" alt=ifttt></p>
+## **Automação IFTTT**
+Após criar uma automação, será possível visualizar todas as condições **IF** e **THEN**.  
+É possível **salvar** a automação como **"scene1"** ou modificar clicando no pequeno ícone de edição.
 
- Custom protocol options:</p>
+![Configuração IFTTT](how%20to%20use_arquivos/image184.jpg)
 
- <img border=0 width=566 height=331 id="Imagem 94"
-src="how%20to%20use_arquivos/image181.jpg" alt="ifttt sms"></p>
+---
 
- SMS options:</p>
+## **Configuração de Rede**
+Ajustes para **Ethernet** e **WiFi**.
 
- <img border=0 width=566 height=229 id="Imagem 93"
-src="how%20to%20use_arquivos/image182.jpg" alt="ifttt call"></p>
+Se configurar o WiFi no **modo AP**, dispositivos como celulares ou tablets poderão se conectar diretamente à placa sem precisar de um roteador.
 
- Voice call options:</p>
+![Modo AP](how%20to%20use_arquivos/image103.png)
 
- <img border=0 width=567 height=558 id="Imagem 92"
-src="how%20to%20use_arquivos/image183.jpg" alt=ifttt></p>
+Se configurar o WiFi no **modo STA** e conectar a placa ao roteador via cabo Ethernet,  
+a placa usará a conexão Ethernet prioritariamente. Caso o cabo seja desconectado,  
+ela alternará automaticamente para WiFi, garantindo conectividade contínua com o roteador.
 
- <span lang=EN-US>After create completed, you can see all IF
-and THEN ICO, you can “Save” the AUTOMATION – “scene1” or click small ICO for
-modify again.</span></p>
+![Configuração GPRS](how%20to%20use_arquivos/image185.jpg)
 
- <span lang=EN-US>&nbsp;</span></p>
+---
 
- <span lang=EN-US>&nbsp;</span></p>
+## **Rede GSM**
+Nesta página, é possível ativar ou desativar o **módulo GSM**.  
+Se desativado, **SMS, chamadas de voz e GPRS** não funcionarão.
 
- <img border=0 width=566 height=701 id="Imagem 91"
-src="how%20to%20use_arquivos/image184.jpg" alt="network setting"></p>
+É possível cadastrar até **6 números de telefone** como administradores.  
+Apenas esses números poderão utilizar as funções de SMS e chamadas.
 
- <span lang=EN-US>Network setting for ethernet and WiFi.</span></p>
+![Teste de GSM](how%20to%20use_arquivos/image186.jpg)
 
- <span lang=EN-US>You if set WiFi by AP mode. device such as
-mobile phone or tablet can connect to board by wifi directly without wifi
-router.</span></p>
+Você pode selecionar um número e enviar uma **mensagem** ou realizar uma **chamada de teste**.
 
- <img border=0 width=457 height=315 id="Imagem 90"
-src="how%20to%20use_arquivos/image103.png" alt=sta></p>
+![Configuração de SMS](how%20to%20use_arquivos/image187.jpg)
 
- <span lang=EN-US>If you set WiFi to STA mode, also you have
-connect to router by ethernet cable. Board will use ethernet firstly, if
-ethernet cable disconnected, then will auto switch to WiFi connect to your wifi
-router, so that make sure let board always connect to your router.</span></p>
+É possível **personalizar o conteúdo do SMS** para ser usado nas **condições IF**.  
+Os textos podem ser definidos em qualquer idioma, não apenas em inglês.
 
- <img border=0 width=566 height=474 id="Imagem 89"
-src="how%20to%20use_arquivos/image185.jpg" alt="gprs setting"></p>
+![Configuração de Notificação SMS](how%20to%20use_arquivos/image188.jpg)
 
- <span lang=EN-US>Here is Network – GSM webpage.</span></p>
+Também é possível definir um SMS para **ações THEN**, como notificações de alarme.
 
- <span lang=EN-US>You can enable/disable your GSM module. If
-disabled, SMS, voice call, GPRS will not work. MAX support fill 6 Administrator
-Phone Numbers. Only these 6 mobile phone number can use SMS and voice call
-function. </span>Tuya app with GPRS no mobile phone number limit.</p>
+![Configuração de Chamadas de Voz](how%20to%20use_arquivos/image189.jpg)
 
- <img border=0 width=566 height=238 id="Imagem 88"
-src="how%20to%20use_arquivos/image186.jpg" alt="gsm test"></p>
+### **Controle de Chamadas de Voz**
+É possível definir **códigos DTMF** para ações IF.  
+Por exemplo:
+- Quando ligar para a placa, ao conectar, pressione **"10#"** para **ligar o relé 1**.
+- Pressione **"11#"** para **desligar o relé 2**.
 
- <span lang=EN-US>You can select your phone number, then
-click “Send a message” or “Make a call” for a test.</span></p>
+![Configuração de Protocolo](how%20to%20use_arquivos/image190.jpg)
 
- <img border=0 width=567 height=486 id="Imagem 87"
-src="how%20to%20use_arquivos/image187.jpg" alt="esp32 sms"></p>
+---
 
- <span lang=EN-US>You can define your SMS content use for IF
-condition. SMS can define by your local language, not only English.</span></p>
+## **Configuração de Protocolos**
+![Protocolo RS485](how%20to%20use_arquivos/image191.jpg)
 
- <img border=0 width=567 height=493 id="Imagem 86"
-src="how%20to%20use_arquivos/image188.jpg" alt="esp32 sms"></p>
+Nesta página, é possível ativar ou desativar diferentes protocolos.  
+Os documentos de referência podem ser baixados no site da **KinCony**.
 
- <span lang=EN-US>You can define your SMS content use for
-THEN actions, such as alarm notification. SMS can define by your local
-language, not only English.</span></p>
+![Protocolo Tuya](how%20to%20use_arquivos/image118.png)
 
- <img border=0 width=567 height=496 id="Imagem 85"
-src="how%20to%20use_arquivos/image189.jpg" alt="phone relay"></p>
+### **Configuração do Tuya**
+Se desejar controlar e monitorar remotamente sua placa via internet pelo **Tuya App**,  
+é necessário adquirir uma **licença Tuya** com a KinCony.
 
- <span lang=EN-US>You can define voice call control (DTMF
-code) for IF condition.</span></p>
+Caso tenha comprado a licença, basta preencher os campos:
+- **Product ID**
+- **Device ID**
+- **Device Secret**
+- **Bind Code**
 
- <span lang=EN-US>For example: when you voice call your
-board, when it connected, press key 10# for turn ON relay-1 or press 11# for
-turn OFF relay-2. </span>Just define a number end with “#”.</p>
+Após preencher, um **QR Code** será gerado automaticamente para adicionar a placa ao **Tuya App**.
 
- <img border=0 width=566 height=916 id="Imagem 84"
-src="how%20to%20use_arquivos/image190.jpg" alt=protocol></p>
+Se a placa possuir um **módulo 4G SIM7600**, também é possível usar o Tuya via **GPRS**.
 
- <img border=0 width=567 height=170 id="Imagem 83"
-src="how%20to%20use_arquivos/image191.jpg" alt="RS485 protocol"></p>
+![Configuração do Tuya App](how%20to%20use_arquivos/image192.jpg)
 
- <span lang=EN-US>Here is protocol setting webpage. You can
-enable/disable different protocol in webpage. About these protocol document you
-can download from KinCony’s webpage.</span></p>
+---
 
- <img border=0 width=566 height=661 id="Imagem 82"
-src="how%20to%20use_arquivos/image118.png" alt="tuya protocol"></p>
+## **Protocolos Personalizados**
+![Página de Protocolos](how%20to%20use_arquivos/image193.jpg)
 
- <span lang=EN-US>If you want to use Tuya mobile phone
-application by remote monitor and control output by internet. You can contact
-us order the Tuya licence code. If you bought Tuya licence from KinCony, you
-just fill product id, device id, device secret, bind code to this webpage, then
-it will auto generate QR code, you can scan QR code add board to Tuya mobile
-phone application.</span></p>
+Nesta página, é possível criar mensagens para os seguintes protocolos:
+- **TCP Client**
+- **UDP Client**
+- **RS232**
+- **RS485**
+- **HTTP GET**
+- **HTTP POST**
 
- <span lang=EN-US>If your board have 4G SIM7600 module, you
-can use Tuya app by GPRS. </span>Just enable it for Tuya.</p>
+Se a opção **"HEX"** não estiver marcada, as mensagens serão enviadas como **strings ANSI**.
 
- <img border=0 width=566 height=578 id="Imagem 81"
-src="how%20to%20use_arquivos/image192.jpg" alt="tuya app"></p>
+### **Exemplo**
+Se desejar enviar um comando **TCP** para outro módulo de relé e ativar **relay1**:
 
- <img border=0 width=566 height=350 id="Imagem 80"
-src="how%20to%20use_arquivos/image193.jpg" alt="custom protocol"></p>
+![Protocolo TCP](how%20to%20use_arquivos/image194.jpg)
 
- <span lang=EN-US>Here is custom protocols webpage.</span></p>
+![Cliente TCP](how%20to%20use_arquivos/image195.jpg)
 
- <span lang=EN-US>You can create message for TCP Client, UDP
-Client, RS232, RS485, HTTP GET, HTTP POST different ways.</span></p>
+Certifique-se de que o **protocolo TCP Client** está ativado.  
+O endereço **192.168.1.215**, porta **4196**, é outro módulo de relé.
 
- <span lang=EN-US>If “HEX” options is not checked, will send
-message by ANSI String.</span></p>
+A string **"RELAY-SET-255,1,1"** será enviada para **IP: 192.168.1.215**, porta **4196**, via TCP.
 
- <span lang=EN-US>Fox example:</span></p>
+### **Exemplo**
+Enviar um comando HTTP GET:
 
- <span lang=EN-US>If you want send a TCP string command to
-another relay module to turn ON relay1:</span></p>
+![Exemplo HTTP](how%20to%20use_arquivos/image196.jpg)
 
- <img border=0 width=567 height=211 id="Imagem 79"
-src="how%20to%20use_arquivos/image194.jpg" alt="custom protocol tcp"></p>
+Isso significa que será enviado o comando:
 
- <img border=0 width=567 height=463 id="Imagem 78"
-src="how%20to%20use_arquivos/image195.jpg" alt="tcp client"></p>
+´´[
+http://192.168.1.200/sw_ctl.cgi?Relay01=ON&postpwd=abcd
+´´´
 
- <span lang=EN-US>Make sure have enabled TCP Client protocol,
-remote address: 192.168.1.215 port: 4196 is another relay board.</span></p>
+Se precisar adicionar parâmetros adicionais, basta preenchê-los no campo **"Message"**.
 
- <span lang=EN-US>So the string “RELAY-SET-255,1,1” will send
-to IP:192.168.1.215 port: 4196 device by TCP.</span></p>
+![Configuração HTTP Server](how%20to%20use_arquivos/image197.jpg)
 
- Fox example:</p>
+Certifique-se de ativar o **protocolo HTTP Server** e definir a **chave de requisição** para segurança.
 
- <img border=0 width=566 height=132 id="Imagem 77"
-src="how%20to%20use_arquivos/image196.jpg"
-alt="Interface gráfica do usuário, Aplicativo&#10;&#10;Descrição gerada automaticamente"></p>
+---
 
- <span lang=EN-US>This means:</span></p>
+## **Configuração RS485**
+Se sua placa possuir suporte ao **RS485**, essa opção será exibida.
 
- <span lang=EN-US>send HTTP command string</span></p>
+![Configuração RS485](how%20to%20use_arquivos/image198.jpg)
 
- <span lang=EN-US>“http://192.168.1.200/sw_ctl.cgi?Relay01=ON&amp;postpwd=abcd”
-by HTTP GET way. If you need add some message with HTTP command, just fill the
-“Message” edit box.</span></p>
+---
 
- <img border=0 width=566 height=446 id="Imagem 76"
-src="how%20to%20use_arquivos/image197.jpg"
-alt="Interface gráfica do usuário, Aplicativo&#10;&#10;Descrição gerada automaticamente"></p>
+## **Configuração do Sistema**
+![Página do Sistema](how%20to%20use_arquivos/image199.jpg)
 
- <span lang=EN-US>Make sure you can enable the “HTTP Server”
-protocol and set the “request secret” for safety.</span></p>
+### **Opções do Sistema**
+- **"Manter saída após reinício"**: Após uma queda de energia, a placa pode restaurar automaticamente o estado das saídas digitais.
+- **"Envio automático de valores ADC"**: A cada 5 segundos, os valores das entradas analógicas são enviados pelo protocolo configurado.
+- **"Tempo de clique duplo"**: Ajusta a velocidade do clique duplo.
+- **"Tempo de pressionamento"**: Ajusta o tempo para reconhecimento de pressionamento longo ou curto.
 
- <img border=0 width=566 height=135 id="Imagem 75"
-src="how%20to%20use_arquivos/image198.jpg" alt=rs485></p>
+![Reinicialização do Sistema](how%20to%20use_arquivos/image200.jpg)
 
- <span lang=EN-US>If you board have RS485, then the option
-will list “RS485”.</span></p>
+### **Opções de Reinicialização**
+- **"Reiniciar Placa"**: Reinicia o dispositivo.
+- **"Restaurar Configuração de Fábrica"**: Apaga todas as configurações e retorna ao modo **AP**.
 
- <img border=0 width=567 height=610 id="Imagem 74"
-src="how%20to%20use_arquivos/image199.jpg" alt=system></p>
+---
 
- <span lang=EN-US>Here is system webpage.</span></p>
+## **Links Úteis**
+- [Guia do Usuário](https://www.kincony.com/user-guide)
+- [Autor: Admin](https://www.kincony.com/author/kinconyadminuu)
+- **Data da Publicação:** 20/07/2023
+- **Página do Produto:** [ESP32 Board 16-Channel Relay](https://www.kincony.com/esp32-board-16-channel-relay-hardware.html)
 
- <span lang=EN-US>“keep output after restart”: when after
-power failure, whether auto recovery digital output state when power on again.</span></p>
 
- <span lang=EN-US>“auto send ADC values”: every 5 seconds
-auto feedback analog input ports value by protocol.</span></p>
-
- <span lang=EN-US>&nbsp;</span></p>
-
- <span lang=EN-US>“double click time”: adjust value for
-change speed of double click.</span></p>
-
- <span lang=EN-US>“hold on time”: adjust value for long or
-short the hold on time.</span></p>
-
- <img border=0 width=566 height=573 id="Imagem 73"
-src="how%20to%20use_arquivos/image200.jpg" alt="system reboot"></p>
-
- <span lang=EN-US>“Restart Board”: reboot board.</span></p>
-
- <span lang=EN-US>“Restore Factory”: clear all setting and
-set WiFi to “AP” mode.</span></p>
-
- <span lang=EN-US>Category:&nbsp;</span><a
-href="https://www.kincony.com/user-guide"><span lang=EN-US>User Guide</span></a><a
-href="https://www.kincony.com/author/kinconyadminuu"
-title="View all posts by admin"><span lang=EN-US>By admin</span></a><a
-href="https://www.kincony.com/2023/07/20" title="am8:15"><span lang=EN-US>07/20/2023</span></a></p>
-
- <b><span lang=EN-US>Author:&nbsp;admin</span></b></p>
-
-https://www.kincony.com/esp32-board-16-channel-relay-hardware.html
