@@ -1,6 +1,6 @@
 # KC868-A16 Smart Controller para Automação Residencial
 
-![Hardware KC 868-A16](https://github.com/Epaminondaslage/Tasmota/blob/main/img/a16-connections.jpg)
+![Hardware KC 868-A16](https://github.com/Epaminondaslage/KC868-A16/a16-connections.jpg)
 
 # KC868-A Series Board Protocol – Comandos MQTT  
 
