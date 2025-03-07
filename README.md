@@ -28,7 +28,7 @@
 🔹 **Firmware Kincony v2.2.10 (Janeiro/2025):**  
 📌 [Acesse aqui](https://www.kincony.com/forum/showthread.php?tid=7283)  
 
-### Licença Tuya para KinKone:
+### Licença Tuya para Kincone:
 
 📌 [Acesse aqui](https://shop.kincony.com/products/tuya-licence-for-kincony-a-series-esp32-board-tell-us-your-email-area-product-model?srsltid=AfmBOoowYu-vq7vkKjzXFJz24eLsUbS-vrJciE_vYj6rY-53zA27UKNQ)
 
