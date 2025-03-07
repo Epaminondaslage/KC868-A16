@@ -28,6 +28,58 @@
 🔹 **Firmware Kincony v2.2.10 (Janeiro/2025):**  
 📌 [Acesse aqui](https://www.kincony.com/forum/showthread.php?tid=7283)  
 
+🔹 **Licença Tuya para KinKone):**  
+📌 [Acesse aqui](https://shop.kincony.com/products/tuya-licence-for-kincony-a-series-esp32-board-tell-us-your-email-area-product-model?srsltid=AfmBOoowYu-vq7vkKjzXFJz24eLsUbS-vrJciE_vYj6rY-53zA27UKNQ)
+1. Depois de pagar, você **DEVE** nos informar seu e-mail, nós enviaremos a licença para seu e-mail.
+
+2. Nos informe sua área (escolha entre):
+   - China
+   - Oeste dos EUA
+   - Leste dos EUA
+   - Europa Central
+   - Europa Ocidental
+   - Índia
+
+**IMPORTANTE:** Verifique sua conta Tuya, qual **REGIÃO** você registrou.
+
+Verifique em seu aplicativo de celular Tuya ou Smart Life:  
+**Eu** -- **Configurações** -- **Conta e Segurança** -- **Região**
+
+De acordo com a "Região", visite aqui [https://developer.tuya.com/en/docs/iot/o...i0ku9l07qb](https://developer.tuya.com/en/docs/iot/o...i0ku9l07qb) para verificar a localização do seu servidor.  
+Se você realmente não sabe como verificar, basta nos enviar o nome da sua conta do aplicativo Tuya ou Smart Life, e nós verificaremos para você.
+
+3. Diga-nos seu modelo (escolha entre):
+   - Kincony A4
+   - Kincony A6
+   - Kincony A8
+   - Kincony A8S
+   - Kincony A16
+   - Kincony A32
+   - Kincony A64
+   - Kincony A128
+   - Kincony E16S
+   - Kincony AI
+   - Kincony AK
+
+4. A licença **não tem limite de tempo**, e a plataforma Tuya fornece serviços e garantias correspondentes.
+
+5. Uma vez vendida, a licença **não pode ser devolvida ou reembolsada**.
+
+6. Uma licença é válida **apenas para um produto**.
+
+O servidor de nuvem de internet Tuya está localizado em 6 posições no mundo:
+   - **Localização-A:** China
+   - **Localização-B:** Oeste dos EUA
+   - **Localização-C:** Leste dos EUA
+   - **Localização-D:** Europa Central
+   - **Localização-E:** Europa Ocidental
+   - **Localização-F:** Índia
+
+Por favor, diga-nos qual localização do servidor sua conta de aplicativo usou.  
+Por exemplo, se sua conta for "Europa Ocidental", diga-nos "Localização-E: Europa Ocidental".
+
+
+
 
 ## Hardware Resource  
 
