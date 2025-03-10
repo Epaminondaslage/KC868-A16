@@ -81,7 +81,18 @@ O servidor de nuvem de internet Tuya está localizado em 6 posições no mundo:
 Por favor, diga-nos qual localização do servidor sua conta de aplicativo usou.  
 Por exemplo, se sua conta for "Europa Ocidental", diga-nos "Localização-E: Europa Ocidental".
 
+## Ativação da Licença 
 
+| Configuração  | Valor |
+|--------------|--------------------------------------------|
+| **Tuya Setting** | enable |
+| **Region** | Western US |
+| **Product ID** | ik0eqq501bf46nha |
+| **Device ID** | 26fd83aa4370b78a37vxox |
+| **Device Secret** | bWNyARCMUy8iVFAW |
+| **Bind Code** | https://m-us.smart321.com/AZT8GHW3hOim5Qhz |
+
+![Tela Ativação Tuya KC 868-A16](https://github.com/Epaminondaslage/KC868-A16/blob/main/tela.jpg)
 
 
 ## Hardware Resource  
