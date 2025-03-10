@@ -92,7 +92,7 @@ Por exemplo, se sua conta for "Europa Ocidental", diga-nos "Localização-E: Eur
 | **Device Secret** | bWNyARCMUy8iVFAW |
 | **Bind Code** | https://m-us.smart321.com/AZT8GHW3hOim5Qhz |
 
-![Tela Ativação Tuya KC 868-A16](https://github.com/Epaminondaslage/KC868-A16/blob/main/Tuya protocol 10-0-0-205.png)
+![Tela Ativação Tuya KC 868-A16](https://github.com/Epaminondaslage/KC868-A16/blob/main/Tuya_protocol_10-0-0-205.png)
 
 
 ## Hardware Resource  
